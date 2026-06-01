@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+@theme {
+  --font-sans: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, serif;
+  
+  /* Geometric Balance Theme Colors */
+  --color-[#FF6B00]: #FF6B00;
+  --color-[#FFF5EE]: #FFF5EE;
+  --color-[#E5E5E5]: #E5E5E5;
+  --color-[#FAFAFA]: #FAFAFA;
+  --color-[#1A1A1A]: #1A1A1A;
+
+  /* Custom Academic Theme Colors */
+  --color-[#9b4500]: #9b4500;
+  --color-[#fd8a42]: #fd8a42;
+  --color-[#00288e]: #00288e;
+  --color-[#25354a]: #25354a;
+  --color-[#1e40af]: #1e40af;
+  --color-[#f7f9fb]: #f7f9fb;
+}
+
+/* Custom interactive styles */
+.book-spine {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* Base book cover structure for Geometric Balance styling */
+.geometric-book-cover {
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.25), 
+              inset 1px 1px 1px rgba(255, 255, 255, 0.15);
+}
+
+.geometric-book-cover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 40px -12px rgba(255, 107, 0, 0.25), 
+              0 20px 35px -15px rgba(0,0,0,0.3);
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(117, 118, 132, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(117, 118, 132, 0.5);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

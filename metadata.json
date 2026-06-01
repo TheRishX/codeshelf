@@ -1,0 +1,6 @@
+{
+  "name": "CodeShelf",
+  "description": "An interactive, feature-rich personal learning library with a virtual 3D bookshelf to organize Coding School notes, PDFs, videos, and learning concepts in one place.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
